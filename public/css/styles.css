@@ -1,0 +1,98 @@
+/* colours */
+:root{
+  --primary: #17144d;
+  --secondary: #27236d;
+  --title: #ffffff;
+}
+
+/* layout styles */
+nav{
+  background: var(--primary);
+  border-bottom: 10px solid var(--secondary);
+}
+nav a{
+  text-transform: uppercase;
+  color: var(--title);
+}
+nav a span{
+  font-weight: bold;
+}
+nav .sidenav-trigger{
+  margin: 0;
+}
+
+.sidenav{
+  background-color: #17144d9c;
+  color: #ffff;
+}
+
+.sidenav a{
+  color: #ffff !important;
+}
+.sidenav i{
+  color: #ffff !important;
+}
+
+
+
+/* movie styles */
+.movies{
+  margin-top: 20px;
+}
+.card-panel.movie{
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 1px 3px rgba(90,90,90,0.1);
+  display: grid;
+  grid-template-columns: 2fr 6fr 1fr;
+  grid-template-areas: "image details delete";
+  position: relative;
+}
+.movie img{
+  grid-area: image;
+  max-width: 60px;
+}
+.movie-details{
+  grid-area: details;
+  margin-top: 6px;
+}
+.movie-delete{
+  grid-area: delete;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.movie-delete i{
+  font-size: 18px;
+}
+.card-title{
+  font-weight: bold !important;
+}
+.movie-description{
+  padding: 10px;
+  font-size: 0.9em;
+}
+.movie-genre{
+  padding: 10px;
+  font-size: 0.8em;
+}
+
+/* form-styles */
+.add-btn{
+  background: #314dca !important;
+}
+input{
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+.side-form button{
+  background: #314dca;
+  box-shadow: 1px 1px 3px rgba(90,90,90,0.2);
+}
+.side-form button:hover{
+  background: var(--secondary);
+  box-shadow: 1px 1px 3px rgba(90,90,90,0.2);
+}
+form .input-field{
+  margin-top: 30px;
+}
